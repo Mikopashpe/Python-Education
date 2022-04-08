@@ -39,3 +39,10 @@ print(third_list)
 
 third_list = [i[1] for i in second_list if i[1] % 2 == 0]
 print(third_list)
+
+forth_list = list(range(8))
+print(forth_list)
+
+forth_list = (sum(i) for i in second_list)
+print(forth_list)
+print(next(forth_list), next(forth_list), next(forth_list))
