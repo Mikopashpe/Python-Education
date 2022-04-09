@@ -34,15 +34,15 @@ second_list = [[1, 2, 3, 4], [11, 22, 33, 44], [111, 222, 333, 444]]    # При
 third_list = [i[3] for i in second_list]    # Списковое включение
 print(third_list)
 
-third_list = [i[1] + 1 for i in second_list]
+third_list = [i[1] + 1 for i in second_list]    # Увеличение значений списка
 print(third_list)
 
-third_list = [i[1] for i in second_list if i[1] % 2 == 0]
+third_list = [i[1] for i in second_list if i[1] % 2 == 0]    # Поиск четных чисел в списке
 print(third_list)
 
-forth_list = list(range(8))
+forth_list = list(range(8))    # Создание списка с помощью функции range
 print(forth_list)
 
-forth_list = (sum(i) for i in second_list)
+forth_list = (sum(i) for i in second_list)    # Создание генератора сумм в списке
 print(forth_list)
 print(next(forth_list), next(forth_list), next(forth_list))
