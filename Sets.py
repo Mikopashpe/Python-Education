@@ -15,3 +15,6 @@ print(second_set - first_set)
 first_list = [1, 2, 6, 7, 6, 2, 5]    # Удаление дублирующих элементов из списка
 print(list(set(first_list)))
 
+first_set.difference(second_set)
+print(first_set)
+
