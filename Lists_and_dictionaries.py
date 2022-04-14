@@ -74,5 +74,3 @@ second_dict = {'second_word' : 2}
 first_dict.update(second_dict)
 print(first_dict)
 
-first_dict.pop(3)
-print(first_dict)
