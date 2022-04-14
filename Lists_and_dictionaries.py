@@ -2,9 +2,6 @@
 
 '''
 
-from errno import ECONNABORTED
-
-
 a = [1, 2, 3, 4]
 b = '56'
 print(a + list(b))
@@ -55,3 +52,27 @@ print(second_list.count(4))
 
 del new_list[2:]
 print(new_list)
+
+first_dict = {'first_word' : 1, 'second_word' : 2, 'third_word' : 3}
+print(first_dict)
+print(first_dict['first_word'])
+print(len(first_dict))
+
+first_dict['second_word'] = ['one', 'two']
+print(first_dict)
+
+first_dict['new_key'] = 'new_value'
+print(first_dict)
+
+del first_dict['second_word']
+print(first_dict)
+
+print(list(first_dict.values()))
+print(list(first_dict.keys()))
+
+second_dict = {'second_word' : 2}
+first_dict.update(second_dict)
+print(first_dict)
+
+first_dict.pop(3)
+print(first_dict)
